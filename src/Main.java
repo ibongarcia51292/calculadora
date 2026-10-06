@@ -13,6 +13,10 @@ public class Main {
                 int resultado = suma();
                 JOptionPane.showMessageDialog(null, "El resultado de la suma es: " + resultado);
             }
+            case 2 -> {
+                int resultado = resta();
+                JOptionPane.showMessageDialog(null, "El resultado de la resta es: " + resultado);
+            }
         }
     }
 
@@ -28,5 +32,11 @@ public class Main {
         int num1 = Integer.parseInt(JOptionPane.showInputDialog("Introduce un número:"));
         int num2 = Integer.parseInt(JOptionPane.showInputDialog("Introduce otro número:"));
         return num1 + num2;
+    }
+
+    public static int resta() {
+        int num1 = Integer.parseInt(JOptionPane.showInputDialog("Introduce un número:"));
+        int num2 = Integer.parseInt(JOptionPane.showInputDialog("Introduce otro número:"));
+        return num1 - num2;
     }
 }
