@@ -18,6 +18,10 @@ public class Main {
                 int resultado = resta();
                 JOptionPane.showMessageDialog(null, "El resultado de la resta es: " + resultado);
             }
+            case 3 -> {
+                int resultado = multi();
+                JOptionPane.showMessageDialog(null, "El resultado de la multiplicación es: " + resultado);
+            }
         }
     }
 
@@ -39,5 +43,11 @@ public class Main {
         int num1 = Integer.parseInt(JOptionPane.showInputDialog("Introduce un número:"));
         int num2 = Integer.parseInt(JOptionPane.showInputDialog("Introduce otro número:"));
         return num1 - num2;
+    }
+
+    public static int multi() {
+        int num1 = Integer.parseInt(JOptionPane.showInputDialog("Introduce un número:"));
+        int num2 = Integer.parseInt(JOptionPane.showInputDialog("Introduce otro número:"));
+        return num1 * num2;
     }
 }
