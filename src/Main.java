@@ -22,6 +22,10 @@ public class Main {
                 int resultado = multi();
                 JOptionPane.showMessageDialog(null, "El resultado de la multiplicación es: " + resultado);
             }
+            case 4 -> {
+                float resultado = radio();
+                JOptionPane.showMessageDialog(null, "El radio de la circunferencia es: " + resultado + "m");
+            }
         }
     }
 
@@ -30,7 +34,7 @@ public class Main {
         System.out.println("1. SUMA");
         System.out.println("2. RESTA");
         System.out.println("3. MULTIPLICACIÓN");
-        System.out.println("4. DIVISIÓN");
+        System.out.println("4. RADIO");
     }
 
     public static int suma() {
@@ -49,5 +53,10 @@ public class Main {
         int num1 = Integer.parseInt(JOptionPane.showInputDialog("Introduce un número:"));
         int num2 = Integer.parseInt(JOptionPane.showInputDialog("Introduce otro número:"));
         return num1 * num2;
+    }
+
+    public static float radio() {
+        int num1 = Integer.parseInt(JOptionPane.showInputDialog("Introduce el radio de la circunferencia (m):"));
+        return (float) (Math.PI * Math.pow(num1, 2));
     }
 }
