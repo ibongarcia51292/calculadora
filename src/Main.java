@@ -22,6 +22,10 @@ public class Main {
                 int resultado = multi();
                 JOptionPane.showMessageDialog(null, "El resultado de la multiplicación es: " + resultado);
             }
+            case 4 -> {
+                    int resultado = divi();
+                    JOptionPane.showMessageDialog(null, "El resultado de la division es: " + resultado);
+            }
         }
     }
 
@@ -49,5 +53,10 @@ public class Main {
         int num1 = Integer.parseInt(JOptionPane.showInputDialog("Introduce un número:"));
         int num2 = Integer.parseInt(JOptionPane.showInputDialog("Introduce otro número:"));
         return num1 * num2;
+    }
+    public static int divi () {
+        int num1 = Integer.parseInt(JOptionPane.showInputDialog("Introduce un número:"));
+        int num2 = Integer.parseInt(JOptionPane.showInputDialog("Introduce otro número:"));
+        return num1 / num2;
     }
 }
